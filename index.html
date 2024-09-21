@@ -20,7 +20,11 @@
 <body>
    <header>
         <div class="profile">
-            <img src="" alt="user-profile-picture" class="profilepicture">
+            <picture>
+                <source media="(max-width: 786px)" srcset="/images/profileimagesmall.webp">
+                <source media="(min-width: 787px )" srcset="/images/profileimage.webp">
+                <img src="/images/profileimage.webp" alt="owners_profile_photo">
+            </picture>
             <h1>Nuley Stanley Nephi</h1>
         </div>
         <div class="controls">

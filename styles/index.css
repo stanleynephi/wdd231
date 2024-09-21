@@ -23,8 +23,17 @@ header{
     .profile{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
+        gap: 1rem;
+
+
+        picture{
+
+            img{
+                width: 5rem;
+            }
+        }
     }
 
 
@@ -76,6 +85,13 @@ main{
         h2{
             position: relative;
             top: 0rem;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: larger;
+            font-family: Roboto;
         }
     }
 
