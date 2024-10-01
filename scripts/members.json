@@ -1,0 +1,12 @@
+{
+    "familyname" : "Nuley",
+    "moveindate" :  "2019-01-01",
+    "numberofpeople" :  2,
+    "visitedbybishop" : false,
+    "individualmembers"  : [
+        { "name" : "Stephanie",
+          "gender" : "Female",
+          "birthdate" :  "1990-01-01"
+        }
+    ]
+}

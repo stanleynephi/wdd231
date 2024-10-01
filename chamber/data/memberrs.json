@@ -1,0 +1,126 @@
+{
+    "companies": [
+        {
+            "company":"01",
+            "details":[
+                {
+                    "name":"BricknBuild",
+                    "address":"270 Dr Busia Highstreet. Sakaman junction, Adjacent A1 Bakery, Accra, Ghana",
+                    "phonenumbers":[
+                        {
+                            "number1":"0200677157",
+                            "number2":"0245393809"
+                        }
+                    ],
+                    "website":"https://www.brickghana.com",
+                    "image":"https://stanleynephi.github.io/wdd230/chamber/images/wdd230-org-small.webp",
+                    "membershiplevel":"Bronze"
+                }
+            ]
+        },
+        {
+            "company":"02",
+            "details":[
+                {
+                    "name":"ACT ICT Ghana Ltd",
+                    "address":"F28/8 Fifth Circular Rd. Labone, Accra, Ghana",
+                    "phonenumbers":[
+                        {
+                            "number1":"0302764657",
+                            "number2":"0577700555"
+                        }
+                    ],
+                    "website":"https://www.act-ict.com",
+                    "image":"https://stanleynephi.github.io/wdd230/chamber/images/wdd230-org-small.webp",
+                    "membershiplevel":"Bronze"
+                }
+            ]
+        },
+        {
+            "company":"03",
+            "details":[
+                {
+                    "name":"COLORMAX GHANA LTD",
+                    "address":"12 Colormax Lane(2nd Mama Kwaku Link) Spintex, East-Airport, Accra, Ghana",
+                    "phonenumbers":[
+                        {
+                            "number1":"0302811724"
+                        }
+                    ],
+                    "website":"https://www.colormaxghana.bz",
+                    "image":"https://stanleynephi.github.io/wdd230/chamber/images/wdd230-org-small.webp",
+                    "membershiplevel":"Gold"
+                }
+            ]
+        },
+        {
+            "company":"04",
+            "details":[
+                {
+                    "name":"Deseret Multimedia",
+                    "address":"Charlie Junction, Koforidua, Ghana",
+                    "phonenumbers":[
+                        {
+                            "number1":"0542737677"
+                        }
+                    ],
+                    "website":"https://www.deseretmultimedia.com",
+                    "image":"https://stanleynephi.github.io/wdd230/chamber/images/wdd230-org-small.webp",
+                    "membershiplevel":"Silver"
+                }
+            ]
+        },
+        {
+            "company":"05",
+            "details":[
+                {
+                    "name":"Ultimate Mobile Phones",
+                    "address":"Ofosua House, Koforidua, Ghana",
+                    "phonenumbers":[
+                        {
+                            "number1":"026808383"
+                        }
+                    ],
+                    "website":"https://www.facebook.com/Ultimatesag",
+                    "image":"https://stanleynephi.github.io/wdd230/chamber/images/wdd230-org-small.webp",
+                    "membershiplevel":""
+                }
+            ]
+        },
+        {
+            "company":"06",
+            "details":[
+                {
+                    "name":"Deseret School Of Design",
+                    "address":"SSNIT Building, 2nd Floor, Office No 206, Koforidua, Ghana",
+                    "phonenumbers":[
+                        {
+                            "number1":"0556662426"
+                        }
+                    ],
+                    "website":"https://www.deseretschoolofdesign.com",
+                    "image":"https://stanleynephi.github.io/wdd230/chamber/images/wdd230-org-small.webp",
+                    "membershiplevel":"Sliver"
+                }
+            ]
+        },
+        {
+            "company":"07",
+            "details":[
+                {
+                    "name":"Rabito Clinic Koforidua",
+                    "address":"Ground Floor SSNIT Office, Koforidua, Ghana",
+                    "phonenumbers":[
+                        {
+                            "number1":"0242262504"
+                        }
+                    ],
+                    "website":"https://www.rabitoclinic.com/eastern-region-branch",
+                    "image":"https://stanleynephi.github.io/wdd230/chamber/images/wdd230-org-small.webp",
+                    "membershiplevel":"Gold"
+                }
+            ]
+        }
+
+    ]
+}
