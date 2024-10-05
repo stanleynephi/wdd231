@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+}
+
+header{
+    background-color: black;
+    height: auto;
+    padding: 1rem;
+
+    nav{
+        
+        a{
+            color: white;
+        }
+    }
+}
+
+
+main{
+    margin:1rem;
+
+    .heroimage_keynotebutton{
+        background-color: green;
+    }
+
+    .home_events{
+        background-color: white;
+        margin: 2rem;
+        height: 100%;
+    }
+
+    .home_events>.events,.currentweather,.forecast{
+        background-color: white;
+        height: 100%;
+        padding: 1rem;
+        border: 1px solid black;
+        font-size: 1rem;
+
+        h1{
+            background-color: black;
+            color: white;
+            margin-bottom: 1rem;
+        }
+    }
+
+    button {
+        justify-self: center;
+        margin:1rem ;
+        background-color: #FFFFFF;
+        color: #000000; 
+        border: 2px solid #000000;
+        padding: .5rem 1.5rem;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 0.3s ease; 
+    }
+
+    button:hover {
+        background-color: #000000; 
+        color: #FFFFFF;
+    }
+
+    .companyinfo{
+        border: 2px solid black;
+        height: 100%;
+        width: auto;
+
+        ul>li{
+            list-style-type: none;
+            font-size: 1.2rem;
+        }
+    }
+
+    .companyinfo:hover{
+        transform: scale(1);
+        transition: all .4s ease;
+    }
+
+    .companyinfo:not(:hover){
+        transform: scale(.9);
+    }
+}
+
+
+
+footer{
+    background-color: black;
+    color: white;
+
+    .socials{
+        width: 20%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .socials>div:hover{
+        transform: scale(1.6);
+        transition: all .4s ease-in-out;
+    }
+
+    .address{
+        display: flex;
+        flex-direction: column;
+
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    }
+} 
