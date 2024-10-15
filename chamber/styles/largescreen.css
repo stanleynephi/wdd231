@@ -9,7 +9,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        background-color: rgb(3, 3, 78);
+        background-color: rgb(2, 2, 71);
         padding: .9rem;
         color: white;
 
@@ -17,16 +17,7 @@
             display: none;
         }
 
-<<<<<<< HEAD
         nav{
-=======
-        .navigation{
-            width: 30rem;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            background-color: inherit;
->>>>>>> 8ee19d4e343ae1a1cf4c8a58650c95eba379b2f1
 
             .navigation{
                 width: 29rem;
@@ -496,17 +487,11 @@
     footer{
         width: auto;
         display: flex;
-<<<<<<< HEAD
         flex-direction: row;
         justify-content: space-around;
         background-color: rgb(8, 8, 36);
         color: white;
         padding: 3rem;
-=======
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
->>>>>>> 8ee19d4e343ae1a1cf4c8a58650c95eba379b2f1
 
         .socials{
             display: flex;
