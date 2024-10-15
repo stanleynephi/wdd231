@@ -191,13 +191,3 @@ const copyRight = () => {
 }
 
 copyRight()
-<<<<<<< HEAD
-=======
-
-
-
-
-
-
-
->>>>>>> 8ee19d4e343ae1a1cf4c8a58650c95eba379b2f1

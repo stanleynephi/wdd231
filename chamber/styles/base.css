@@ -19,10 +19,6 @@ header{
 main{
     margin:1rem;
 
-    .heroimage_keynotebutton{
-        background-color: green;
-    }
-
     .home_events{
         background-color: white;
         margin: 2rem;

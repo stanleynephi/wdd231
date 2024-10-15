@@ -40,10 +40,12 @@
     main{
         display: flex;
         flex-direction: column;
-        margin: 2rem auto;
+        margin: auto;
         
 
         .heroimage_keynotebutton{
+            height: 20rem;
+            background-color: green;
             display: grid;
             grid-template-columns: repeat(6,1fr);
             grid-template-rows: repeat(4,1fr);
@@ -55,21 +57,55 @@
                 z-index: 0;
             }
 
-            .keynote_button{
+            .keynote_button {
                 position: relative;
-                grid-column: 6/7;
-                grid-row: -2/-3;
+                grid-column: 6 / 7;
+                grid-row: -2 / -3;
                 z-index: 1;
                 justify-self: center;
+                height: 2rem;
+                
+                /* Button Appearance */
+                background-color: #007BFF; /* Blue background color */
+                color: white; /* White text */
+                border: none; /* Remove default border */
+                border-radius: 8px; /* Rounded corners */
+                padding: 5px  10px; /* Add some space around the text */
+                font-size: 16px; /* Adjust text size */
+                font-weight: bold; /* Bold text */
+                cursor: pointer; /* Pointer on hover */
+                transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
             }
+            
+            /* Hover effect */
+            .keynote_button:hover {
+                background-color: #0056b3; /* Darker blue on hover */
+                transform: scale(1.05); /* Slightly enlarge the button on hover */
+            }
+            
+            /* Active effect when clicking */
+            .keynote_button:active {
+                transform: scale(1); /* Return to original size */
+                background-color: #004085; /* Even darker blue when clicked */
+            }
+            
+            /* Focus effect (accessibility) */
+            .keynote_button:focus {
+                outline: 2px solid #80bdff; /* Blue outline for focus */
+                outline-offset: 2px;
+            }
+            
         }
-
-
+        
         .home_events{
             display: flex;
             justify-content: space-between;
             align-items: start;
             gap: 2rem;
+            background-color: white;
+            margin: 2rem;
+            height: 70vh;
 
             .events{
                 flex-grow: 2;
@@ -114,6 +150,39 @@
                 }
             }
         }
+
+        #list_grid {
+            background-color: #28a745; /* Green background color */
+            color: white; /* White text */
+            border: none; /* Remove default border */
+            padding: 10px 20px; /* Padding for a comfortable touch area */
+            border-radius: 5px; /* Slightly rounded corners */
+            font-size: 14px; /* Adjust font size */
+            font-weight: 600; /* Semi-bold text */
+            cursor: pointer; /* Pointer on hover */
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Soft shadow */
+            outline: none; /* Remove focus outline */
+        }
+        
+        /* Hover effect */
+        #list_grid:hover {
+            background-color: #218838; /* Darker green on hover */
+            transform: scale(1.05); /* Slight enlargement on hover */
+        }
+        
+        /* Active effect when clicking */
+        #list_grid:active {
+            background-color: #1e7e34; /* Even darker green on active */
+            transform: scale(0.98); /* Slightly shrink on click */
+        }
+        
+        /* Focus effect (accessibility) */
+        #list_grid:focus {
+            outline: 2px solid #80bdff; /* Blue outline for focus */
+            outline-offset: 2px;
+        }
+        
 
         .bussinesses{
             display: grid;
