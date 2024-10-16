@@ -26,39 +26,33 @@ function showResults(data){
     return(results)
 }   
 
-function datatoScreen(){
+function datatoScreen() {
     // Full name
     let name = showResults("fname") + " " + showResults("lname");
+    const nameElement = document.createElement("p"); // Create a paragraph for the name
+    nameElement.textContent = `Name: ${name}`;
+    document.querySelector("#results").appendChild(nameElement); // Append the name to the results div
     console.log(name);
 
     // Organizational name and title
     let organizatonInfo = showResults("organizational_title") + " " + showResults("organizational_name");
+    const organizationElement = document.createElement("p"); // Create a paragraph for the organization info
+    organizationElement.textContent = `Organization: ${organizatonInfo}`;
+    document.querySelector("#results").appendChild(organizationElement); // Append the organization info to the results div
     console.log(organizatonInfo);
 
-    // Create email link
-    const email = document.createElement("a");
-    email.href = `mailto:${showResults("organizational_email")}`;
-    email.innerHTML = showResults("organizational_email");
-    console.log(email);
+    // Email
+    const CompanyEmail = document.querySelector("#companyemail");
+    CompanyEmail.textContent = `Email: ${showResults("organizational_email")}`;
+    CompanyEmail.href = `mailto:${showResults("organizational_email")}`;
 
-    // Create phone link
-    const phone = document.createElement("a");
-    phone.href = `tel:${showResults("organizational_phone")}`;
-    phone.innerHTML = showResults("organizational_phone");
-    console.log(phone);
-
-    // Set the inner HTML and then append the email and phone elements
-    document.querySelector("#results").innerHTML = `
-        Thank you, ${name}, for providing your details!<br>
-        Organization: ${organizatonInfo}<br>
-        Email: 
-    `;
-
-    document.querySelector("#results").appendChild(email); // Append email link
-    document.querySelector("#results").innerHTML += `Phone: `;
-    document.querySelector("#results").appendChild(phone); // Append phone link
-    document.querySelector("#results").innerHTML += `<br>We will reach out to you shortly.`;
+    // Phone
+    const CompanyPhone = document.querySelector("#companyphone");
+    CompanyPhone.textContent = `Telephone: ${showResults("organizational_phone")}`;
+    CompanyPhone.href = `tel:${showResults("organizational_phone")}`;
+    
 }
+
 
 datatoScreen();
 

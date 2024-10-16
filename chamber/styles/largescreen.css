@@ -538,17 +538,65 @@
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
+                    padding: 1rem; 
+                    background-color: #f8f9fa; 
+                    border-radius: 10px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    text-align: center; 
+                }
+
+                div:hover{
+                    transform: scale(1.05);
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                }
+
+                div button{
+                    background-color: #007bff; 
+                    color: white; 
+                    border: none;
+                    padding: 0.5rem 1rem; 
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+                }
+
+                div button:hover{
+                    background-color: #0056b3;
                 }
             }
         }
     }
 
     #thankyou{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem;
         
 
         #results{
             display: flex;
-            flex-direction: column;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            background-color: #004085;
+            padding: 2rem;
+            color: white;
+            text-transform: capitalize;
+
+            .companyresults{
+                display: flex;
+                flex-direction: column;
+
+                a{
+                    color: white;
+                    text-decoration: none;
+                    text-transform: lowercase;
+                    
+                }
+            }
         }
     }
 
