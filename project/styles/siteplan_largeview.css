@@ -1,0 +1,100 @@
+@media screen and (min-width: 788px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    
+    header{
+        width: 100%;
+        background-color: blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        color: white;
+    }
+    
+    main{
+        margin: 1rem auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    
+        .sitename{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+            grid-template-rows: repeat(2, 1fr);
+            gap: 1rem;
+    
+            .name{
+                grid-column:span 2;
+                grid-row: 1/2;
+                text-align: center;
+            }
+    
+            .purpose,
+            .scenario{
+                grid-row: 2/3;
+            }
+        }
+    
+        .colorschemes{
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            height: 50vh;
+            text-align: center;
+        }
+    
+        .mobilewireframes{
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+    
+            .content{
+                display: flex;
+                flex-direction:row;
+                justify-content: space-around;
+                align-items: center;
+                text-align: center;
+    
+    
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    
+        .largescreenwireframes{
+            margin: 1rem auto;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            .contents{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                text-align: center;
+    
+                img{
+                    width: 100%;
+                }    
+            }
+        }
+    }
+    
+    footer{
+        margin: 15rem auto 0;
+        background-color: blue;
+        padding: 1rem 0;
+        text-align: center;
+        color: white;
+    }
+}
