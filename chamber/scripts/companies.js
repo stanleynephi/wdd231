@@ -30,7 +30,8 @@ packages.forEach(
 function showDetails(x){
     const packageName = document.querySelector("dialog h2")
     packageName.innerHTML = x.name
-
+    
+    detail.innerHTML = "";
     x.details.forEach(
         det => {
             const detailItem = document.createElement("li")
@@ -51,15 +52,6 @@ closeDialog.addEventListener("click", () => {
     detail.innerHTML = " "; // Clear the details right after closing the dialog
 });
 
-closeDialog.addEventListener("keydown", (event)=> {
-    if(event.key === "Escape"){
-        const dialog = document.querySelector("dialog")
-        const detail = document.querySelector("dialog ul")
-
-        dialog.close()
-        detail.innerHTML = " "
-    }
-})
 
 
 

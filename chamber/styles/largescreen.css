@@ -20,7 +20,7 @@
         nav{
 
             .navigation{
-                width: 29rem;
+                width: 39rem;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
@@ -382,6 +382,178 @@
 
     main::-webkit-scrollbar{
         display: none;
+    }
+
+    #discover{
+        display: flex;
+        justify-content: space-around;
+        padding: 0 1rem;
+        margin: 2rem auto;
+        height: auto;
+        
+        .dicoverypage{
+            display: grid;
+            grid-template-columns: repeat(3 ,1fr);
+            gap: 2rem;
+            
+         
+            aside{
+                height: 100vh;
+                overflow-y: scroll;
+                background-color: rgba(200, 195, 195, 0.266);
+                border-radius: 20px;
+
+
+                .news{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        align-items: center;
+                        padding: 0 .5rem;
+                        gap: 1rem;
+
+
+
+                        li{
+                        list-style: none;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        align-items: center;
+                        text-align: center;
+                        padding: .5rem;
+                        background-color: white;
+                        border-radius: 20px;
+                        }
+
+                        button {
+                            margin-top: 2rem;
+                            background-color: #0662c5;
+                            color: white;
+                            border: none;
+                            padding: 0.5rem 1rem;
+                            border-radius: 5px;
+                            cursor: pointer;
+                            transition: background-color 0.3s ease;
+
+                            a{
+                                color: white;
+                                text-decoration: none;
+                                text-transform: capitalize;
+                            }
+                        }
+                        
+                        button:hover {
+                            background-color: #0056b3;
+
+                            
+                            a{
+                                color: white;
+                                text-decoration: none;
+                                text-transform: capitalize;
+                            }
+                        }
+                        
+                    }
+                }
+
+                .events{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 2rem auto;
+
+                    .eventshere{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        padding: 0 .5rem;
+                        gap: 2rem;
+
+                        div{
+                            background-color: rgba(0, 0, 255, 0.372);
+                            padding: 1rem .5rem;
+                            border-radius: 20px;
+                            
+
+                            h1,
+                            h2{
+                                color: white;
+                                text-align: left;
+                            }
+
+                            h1{
+                                margin-bottom: -15px;
+                            }
+                        }
+
+
+
+                        button {
+                            margin-top: 2rem;
+                            background-color: #0662c5;
+                            color: white;
+                            border: none;
+                            padding: 0.5rem 1rem;
+                            border-radius: 5px;
+                            cursor: pointer;
+                            transition: background-color 0.3s ease;
+
+                            a{
+                                color: white;
+                                text-decoration: none;
+                                text-transform: capitalize;
+                            }
+                        }
+                        
+                        button:hover {
+                            background-color: #0056b3;
+
+                            
+                            a{
+                                color: white;
+                                text-decoration: none;
+                                text-transform: capitalize;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+            ::-webkit-scrollbar{
+                display: none;
+            }
+
+
+            #maincontents {
+                grid-column: span 2;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                gap: 2rem;
+                height: 100vh;
+                overflow-y: scroll;
+                border-radius: 20px;
+            }
+            
+            /* Separate rule for the .image class */
+            #maincontents .image {
+                width: 100%;
+                border-radius: inherit;
+            }
+
+
+            
+        }
     }
 
     #join{
