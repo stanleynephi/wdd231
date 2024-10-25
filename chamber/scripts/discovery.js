@@ -1,6 +1,6 @@
 //get the news contents from BBC
-const apiKey = "d553d13e1e98492c906c1426c477948b";
-const apiURL = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${apiKey}`
+const apiKey = "jFvpKqf2zn3MXQpl1aizvNNi1bAkRG5I";
+const apiURL = `https://api.nytimes.com/svc/topstories/v2/world.json?api-key=${apiKey}`
 
 //function to fetch api and console log the results
 async function getNews(){
@@ -16,7 +16,7 @@ async function getNews(){
 
         .then(data =>{
             console.log(data)
-            populateNews(data.articles)
+            populateNews(data.results)
             
         })
     }
@@ -43,7 +43,7 @@ function  populateNews(data){
         link.target = "_blank"
         link.textContent = "learn More"
         button.append(link)
-        list.append(title, news.description, button)
+        list.append(title, news.abstract, button)
         document.querySelector(".news ul").appendChild(list)
     });
 
