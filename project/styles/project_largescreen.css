@@ -77,19 +77,33 @@
 
 
         #herosectionpage{
-            background-color: red;
             height: 60vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-
+            position: relative;
+            
 
             p{
-                width: 20rem;
-                background-color: white;
+                width: 40rem;
                 padding: 1rem;
                 font-size: clamp(15px, 18px, 25px);
             }
+        }
+
+        #herosectionpage::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("../images/mainpage_herosectionimage.webp");
+            background-size: cover;
+            background-position: center;
+            z-index: -1; 
+            opacity: 0.2;
         }
 
 
@@ -101,20 +115,28 @@
             align-items: center;
             width: 50rem;
             height: 60vh;
-            background-color: aqua;
 
             .textcontent{
                 width: 20rem;
             }
             .aboutusimage{
+                display: flex;
+                justify-content: center;
+                max-width: 20rem;
+                border: 2px solid black;
+                border-radius: 20px;
+                
                 img{
                     width: 100%;
+                    border-radius: inherit;
+                    object-fit: cover;
+
                 }
             }
         }
 
         #services{
-            margin: 1rem;
+            margin: 1rem 0rem;
             height: 70vh;
             display: flex;
             flex-direction: row;
@@ -122,15 +144,35 @@
             align-items: center;
             gap: 2rem;
             padding: 1rem;
+            background-color: #002244;
 
 
             .bussiness_networking_events,
             .marketing_promotion,
             .advocacy_resources{
                 text-align: left;
-                background-color: red;
+                color: white;
                 padding: 1rem;
                 text-align: center;
+                border: 2px solid white;
+                border-radius: 20px;
+
+
+                button{
+                    background-color: #004085;
+                    color: white;
+                    border: none;
+                    padding:  10px 20px;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    border-radius: 6px;
+                    cursor: pointer;
+                    margin-top: 1rem;
+                    transition: background-color 0.3s ease;
+                }
+                button:hover{
+                    background-color: #003366;
+                }
             }
         }
 
@@ -166,7 +208,6 @@
                     width: calc(600px - 10%);
                     transform: translateX(26%);
                     text-align: center;
-                    background-color: red;
                 }
 
 
@@ -205,20 +246,44 @@
         #herosectionpage{
             margin-top: -1rem;
             margin-bottom: 2rem;    
-            background-color: red;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 60vh;
+            position: relative;
 
             p{
                 font-size: clamp(15px, 18px, 25px);
-                background-color: white;
                 text-align: center;
                 width: 40rem;
                 padding: 1rem;
             }
+
+            p:nth-child(1){
+                font-size: larger;
+                font-weight: bold;
+            }
+
+            p:nth-child(2),
+            p:nth-child(3){
+                margin-top: -1%;
+                padding: 0;
+            }
+        }
+
+        #herosectionpage::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("../images/group-women-checking-mall.webp");
+            background-size: cover;
+            background-position: top;
+            z-index: -1;
+            opacity: 0.2;
         }
         
     #clients{
@@ -230,21 +295,66 @@
         margin-bottom: 3rem;
 
         .clients{
-            padding: 0 3rem;
+            padding: 1.5rem;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: start;
+            justify-content: center;
             align-items: flex-start;
             gap: 3rem;
-            width: 60rem ;
+            width: 100% ;
+            max-width: 75rem;
         }
 
-        .clients div{
-            background-color: red;
+        .clients > div {
+            background-color: #f0f4fa; 
+            width: 100%;
+            max-width: 20rem;
+            color: #003366; 
+            text-align: center;
             padding: 1rem;
             border-radius: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; 
+
+            li{
+                list-style: none;
+            }
         }
+        
+        .clients >div:hover {
+            transform: scale(1.05); 
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        .clients >div h3 {
+            color: #003366; 
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .clients >div p {
+            color: #333; 
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        
+        .clients >div a {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            color: white;
+            background-color: #003366; 
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.2s ease;
+        }
+        
+        .clients >div a:hover {
+            background-color: #00509e; 
+        }
+        
     }
     }
 

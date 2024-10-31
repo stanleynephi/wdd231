@@ -114,12 +114,29 @@
         #herosectionpage{
             width: auto;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
+            text-align: center;
         }
 
         #herosectionpage p{
            padding: 2rem;
+           margin-top: -3%;
+        }
+
+        #herosectionpage::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("../images/mainpage_herosectionimage.webp");
+            background-size: cover;
+            background-position: top;
+            z-index: -1;
+            opacity: 0.2;
         }
 
         #aboutchamber{
@@ -127,7 +144,7 @@
             margin: calc(1rem -  3vw) auto;
 
             display: flex;
-            flex-direction: column-reverse;
+            flex-direction: column;
             justify-content: space-around;
             align-items: center;
             width: 100%;
@@ -138,6 +155,14 @@
         }
 
 
+        .aboutusimage{
+
+            img{
+                width: 100%;
+            }
+        }
+
+
         #services{
             margin: calc(.1vw + 10px) auto;
             height: auto;
@@ -145,13 +170,29 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-
+            gap: 3rem;
+            padding: 0 1rem;
             
         .bussiness_networking_events,
         .marketing_promotion,
         .advocacy_resources{
             text-align: center;
-            padding: 2rem;
+            padding: 2rem 0;
+            border: 2px solid #002244;
+            border-radius: 20px;
+
+            button{
+                background-color: #004085;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                font-size: 1rem;
+                font-weight: bold;
+                border-radius: 6px;
+                cursor: pointer;
+                margin-top: 1rem;
+
+            }
 
         }
         }
@@ -212,20 +253,48 @@
         
         #herosectionpage{
             margin: auto;
-            background-color: red;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             height: auto;
+            position: relative;
         }
 
         #herosectionpage p{
-            background-color: white;
+            font-size: 2rem;
             width: auto;
             padding: 1rem;
             text-align: center;
             font-size: clamp(15px, 18px, 25px);
+
+        }
+
+        
+            
+        #herosectionpage p:nth-child(1){
+            font-size: larger;
+            font-weight: bold;
+        }
+
+        #herosectionpage p:nth-child(2),
+        #herosectionpage p:nth-child(3){
+            margin-top: -1%;
+            padding: 0;
+        }
+
+        #herosectionpage::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("../images/group-women-checking-mall.webp");
+            background-size: cover;
+            background-position: top;
+            z-index: -1;
+            opacity: 0.2;
         }
     }
 
@@ -247,40 +316,57 @@
             width: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        
+        }
+
+        .clients > div{
+            border: 2px solid #002244;
+            border-radius: 20px;
+            width: 100%;
+            max-width: 24rem;
+            display: flex;
+            flex-direction: column;
             align-items: center;
             text-align: center;
-            gap: 1rem;
-            
+            background-color: white;
 
-            div{
-                width: 80%;
-                padding: 1rem;
-                font-size: larger;
-                background-color: #f0f0f0;
-                border-radius: 5px;
-                text-align: center;
+            ul{ 
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                text-align: center;
+                padding-right: 1rem;
 
-                ul{ 
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    li{
-                        list-style: none;
-                        text-align: center;
+                li{
+                    list-style: none;
 
-                        a{
-                            text-decoration: none;
-                            color: #004085;
-                        }
+                    a{
+                        text-decoration: none;
+                        font-size: 1.2rem;
                     }
                 }
-                
             }
+
+            
+            img{
+                width: 100%;
+                max-width: 5rem;
+            }
+            
+        }
+
+        .clients >div a {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem;
+            color: white;
+            background-color: #003366; 
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.2s ease;
         }
     }
 
